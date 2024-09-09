@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</style>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <div id="navbar">
+        <!-- Logo Image -->
+        <img src="{% static 'image/Vignan.jpg' %}" alt="Vignan" width="270" height="100">
+        <!-- Navigation Menu -->
+        <nav>
+            <ul class="menu">
+                <li><a href="/acadmics">Acadmics</a></li>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/admision">Admision</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <form action="/action.php">
+            <input type="text" placeholder="Enter User ID" required>
+            <br>
+            <input type="password" placeholder="Enter Password" required>
+            <br>
+            <select name="userRole" id="SelectUser">
+                <option value="Select User">Select User</option>
+                <option value="Student">Student</option>
+                <option value="Parent">Parent</option>
+                <option value="Staff">Staff</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+            <br><br>
+            <h2>Forgot Your Password?<a href="/resetpassword" class="reset-link">Click here</a></h2>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #6482AD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px; 
+}
+
+#navbar img {
+    margin-left: 0px; 
+}
+
+nav {
+    margin-right: 20px; 
+}
+
+#navbar ul {
+    list-style: none; 
+    display: flex;
+    gap: 20px;
+}
+
+#navbar li {
+    display: inline-block; 
+}
+
+#navbar li a {
+    display: inline-block;
+    text-decoration: none; 
+    font-weight: 1000;
+    text-transform: uppercase; 
+    line-height: 50px; 
+    color: #11077a; 
+    padding: 0 15px; 
+}
+
+a {
+    background-color: #E2DAD6; 
+    color: #2f568e; 
+    border-radius: 5px; 
+}
+
+#navbar li a:hover {
+    background-color: #030a15; 
+    color: #6482AD; 
+    border-radius: 5px; 
+}
+
+body {
+    background-image: url('/static/image/vignan_university.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+}
+
+.content {
+    text-align: center;
+    margin-top: 200px; 
+    color: rgb(255, 255, 255); 
+}
+
+form {
+    background-color: #E2DAD6; 
+    padding: 20px; 
+    border-radius: 25px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    max-width: 400px; 
+    width: 100%;
+    margin: 0 auto; 
+}
+
+form input[type="tel"],
+form input[type="number"],
+form select {
+    width: 100%; 
+    padding: 10px; 
+    margin: 10px 0; 
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+    color: black; 
+    background-color: white; 
+}
+form label {
+    color: #030a15;
+    font-size: 120%;
+    font-weight: normal;
+}
+select#SelectUser option {
+    color: black; 
+    background-color: white; 
+}
+
+/* Styling for submit button */
+form input[type="submit"] {
+    background-color:#7552c5;
+    color: white; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    width: 100%; 
+    font-size: 16px; 
+}
+
+/* Hover effect for the submit button */
+form input[type="submit"]:hover {
+    background-color: #45a049; 
+}
+
+form h2 {
+    color: #030a15;
+    font-size: 15px;
+}
